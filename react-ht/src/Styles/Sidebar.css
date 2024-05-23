@@ -1,0 +1,96 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    #title {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .logo {
+        display: none;
+    }
+}
+
+.Sidebar {
+    height: 100%;
+    width: 10%;
+    margin: 0;
+    padding: 0;
+    background-color: #e20074;
+    box-shadow: 0px 0px 0px 2px #78003e;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.SidebarList {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.SidebarList .SidebarOption {
+    width: 100%;
+    height: 50%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 75%;
+    background-color: #e20074;
+    justify-content: left;
+    align-items: center;
+    font-family: eleGroteskScreen, TeleGrotesk, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.SidebarList .SidebarOption:hover {
+    cursor: pointer;
+}
+
+.SidebarList .SidebarOption:hover #icon {
+    color: #ff90ca;
+}
+
+.SidebarList .SidebarOption:hover #title {
+    color: #ff90ca;
+}
+
+.SidebarList #active {
+    background-color: #78003e;
+}
+
+.SidebarOption #icon {
+    flex: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.SidebarOption #title {
+    flex: 70%;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.imgHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.logo {
+    width: 100%;
+    height: same-as-width
+}

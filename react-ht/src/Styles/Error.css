@@ -1,0 +1,63 @@
+.Errormain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.ErrorTextHolder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ErrorTitle {
+    color: #e20074;
+}
+
+.NotFound {
+    color: #e20074;
+    font-size: 4vw;
+}
+
+.ErrorImage {
+    height: 30%;
+    width: auto; 
+}
+
+.ErrorBtn {
+    padding: 2vw 3vw;
+    background-color: #e20074;
+    border-radius: 2vw;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.ErrorBtn:hover {
+    background-color: #78003e;
+}
+
+@media screen and (max-width: 768px) {
+    .NotFound {
+        font-size: 8vw;
+    }
+
+    .ErrorImage {
+        height: 20%;
+    }
+
+    .ErrorBtn {
+        padding: 4vw 6vw;
+        border-radius: 4vw;
+    }
+}

@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import Sidebar from '../Components/Sidebar';
-import { useParams, useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import '../Styles/ShipmentDetail.css';
 import shipmentsData from '../Data.json';
 
 const Add = () => {
     const [formData, setFormData] = useState(shipmentsData.map(item => item.shipments)[0]);
-    const [isEditable, setIsEditable] = useState(false);
     const navigate = useNavigate();
-
     const handleInputChange = (e) => {
         const { id, value } = e.target;
         setFormData({ ...formData, [id]: value });

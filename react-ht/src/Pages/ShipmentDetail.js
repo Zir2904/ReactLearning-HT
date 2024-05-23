@@ -25,6 +25,7 @@ export const ShipmentDetail = () => {
         billingAddress: ''
     });
 
+    // eslint-disable-next-line
     const shipment = shipmentsData.find(entry => entry.shipments.orderId == shipmentId);
 
     if (!shipment) {
